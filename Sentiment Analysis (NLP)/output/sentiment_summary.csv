@@ -1,0 +1,7 @@
+metric,value
+Total Reviews,10000.0
+Positive,5100.0
+Negative,4900.0
+Correct Predictions,8920.0
+Wrong Predictions,1080.0
+Accuracy,0.892

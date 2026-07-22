@@ -1,0 +1,10 @@
+metric,value
+Total Transactions,56746.0
+True Fraud,95.0
+Predicted Fraud,77.0
+True Positives,71.0
+False Positives,6.0
+False Negatives,24.0
+Precision,0.9221
+Recall,0.7474
+ROC_AUC,0.9512
