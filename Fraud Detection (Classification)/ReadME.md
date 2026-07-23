@@ -171,6 +171,67 @@ Missing fraud (false negative) is the costliest failure, and bank is responsible
 3. **Real-time scoring pipeline** - The current system will require manual input of new transactions data to be reanalyzed. In production environment, that can be further enhanced by deploying a real-time API scoring pipeline that feeds the `fraud_risk_score` directly into the bank's transaction-approval system.
 
 
+## Installation & Usage
+
+### 1. Clone the repository
+
+If you have **not cloned the repository yet**, run:
+
+```bash
+git clone https://github.com/vionyp/data-analytics-portfolio.git
+cd data-analytics-portfolio
+```
+
+### 2. (Optional) Create a virtual environment
+
+Using a virtual environment is recommended to avoid dependency conflicts.
+
+```bash
+# Windows
+python -m venv venv
+venv\Scripts\activate
+
+# macOS / Linux
+python3 -m venv venv
+source venv/bin/activate
+```
+
+### 3. Install the required dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Download the dataset
+
+The dataset is **not included** in this repository due to GitHub's file size limitations.
+
+Download the dataset from:
+- [Credit Card Fraud Detection Dataset — Kaggle](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud)
+
+Place the downloaded file in:
+
+```text
+Fraud Detection (Classification)/
+└── data/
+    └── creditcard.csv
+```
+
+### 5. Run the notebook
+
+```bash
+jupyter notebook
+```
+
+Open:
+
+```text
+Fraud Detection (Classification)/notebook.ipynb
+```
+
+Run all cells sequentially.
+
+
 ## Reflection
 
 This project was the most challenging among all the project I have worked on so far. Because of the extreme class imbalance (99.83% legitimate and 0.17% fraud), the model selection cannot simply rely on the standard accuracy as the evaluation metric. A model that predicts "legitimate" for every transaction and catches zero fraud would already achieve 99.83% accuracy but would be completely useless in practice. This is why I shifted the evaluation focus toward Recall, Precision, F1, and ROC-AUC. 

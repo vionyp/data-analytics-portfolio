@@ -156,6 +156,67 @@ Applying targeted marketing strategies for each segment can improve customer eng
 3. **Real time scoring pipeline** - The current system will require manual input of new customer data to be reanalyzed. That can be further enhanced by deploying a scoring pipeline that have real-time API which can assign new customer to those 5 segments automatically.
 
 
+## Installation & Usage
+
+### 1. Clone the repository
+
+If you have **not cloned the repository yet**, run:
+
+```bash
+git clone https://github.com/vionyp/data-analytics-portfolio.git
+cd data-analytics-portfolio
+```
+
+### 2. (Optional) Create a virtual environment
+
+Using a virtual environment is recommended to avoid dependency conflicts.
+
+```bash
+# Windows
+python -m venv venv
+venv\Scripts\activate
+
+# macOS / Linux
+python3 -m venv venv
+source venv/bin/activate
+```
+
+### 3. Install the required dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Download the dataset
+
+The dataset is **not included** in this repository due to GitHub's file size limitations.
+
+Download the dataset from:
+- [Mall Customer Segmentation Dataset — Kaggle](https://www.kaggle.com/datasets/vjchoudhary7/customer-segmentation-tutorial-in-python)
+
+Place the downloaded file in:
+
+```text
+Customer Segmentation (Clustering)/
+└── data/
+    └── Mall_Customers.csv
+```
+
+### 5. Run the notebook
+
+```bash
+jupyter notebook
+```
+
+Open:
+
+```text
+Customer Segmentation (Clustering)/notebook.ipynb
+```
+
+Run all cells sequentially.
+
+
 ## Reflection 
 
 During the feedback session, I was asked why `Age` and `Gender` were not included in the clustering process. Initially, I was confident that excluding `Gender` was the right decision, as encoding male and female as numerical values (e.g., 0 and 1) would introduce an artificial distance relationship that K-Means, which relies on Euclidean distance, would incorrectly interpret as meaningful.

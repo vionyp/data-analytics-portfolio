@@ -124,6 +124,67 @@ This current system already achieves high accuracy (89.2%). For production deplo
 These improvements were not implemented in this project due to scope and resource constraints. `BERT fine-tuning` requires GPU access and longer training time, `Real-time API` and `Confidence-based routing` require production environment with live incoming data.
 
 
+## Installation & Usage
+
+### 1. Clone the repository
+
+If you have **not cloned the repository yet**, run:
+
+```bash
+git clone https://github.com/vionyp/data-analytics-portfolio.git
+cd data-analytics-portfolio
+```
+
+### 2. (Optional) Create a virtual environment
+
+Using a virtual environment is recommended to avoid dependency conflicts.
+
+```bash
+# Windows
+python -m venv venv
+venv\Scripts\activate
+
+# macOS / Linux
+python3 -m venv venv
+source venv/bin/activate
+```
+
+### 3. Install the required dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Download the dataset
+
+The dataset is **not included** in this repository due to GitHub's file size limitations.
+
+Download the dataset from:
+- [IMDb Dataset of 50K Movie Reviews — Kaggle](https://www.kaggle.com/datasets)
+
+Place the downloaded file in:
+
+```text
+Sentiment Analysis (NLP)/
+└── data/
+    └── IMDB Dataset.csv
+```
+
+### 5. Run the notebook
+
+```bash
+jupyter notebook
+```
+
+Open:
+
+```text
+Sentiment Analysis (NLP)/notebook.ipynb
+```
+
+Run all cells sequentially.
+
+
 ## Reflection
 
 At first, when I was comparing the two models, I assumed that `Naive Bayes` would have better performance compared to `Logistic Regression` for this sentiment analysis project. As a probabilistic model, `Naive Bayes` can calculate the likelihood of where each word belongs to a sentiment class, which makes it more intuitive for text classification process (each word contributes individually to the overall sentiment).

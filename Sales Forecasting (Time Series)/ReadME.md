@@ -150,6 +150,69 @@ The almost-flat trend and stable seasonal pattern suggests Walmart's total weekl
 These improvements were not implemented due to a combination of dataset limitations and scope constraints. The dataset itself only covers 2.7 years (Feb 2010 – Oct 2012), which does not allow models to be validly evaluated. `SARIMA` and `Prophet` were excluded to keep the project focused on core time series fundamentals (trend, seasonality, lag features, and chronological splitting). `Store/Department-level forecasting` was not applied since it is out of scope for a portfolio project (requiring training 4,455 separate models (45 stores × 99 departments)), even though it will be crucial for a production environment. Finally, `external features` could not be used by Holt-Winters that only accepts a single time series as input. 
 
 
+## Installation & Usage
+
+### 1. Clone the repository
+
+If you have **not cloned the repository yet**, run:
+
+```bash
+git clone https://github.com/vionyp/data-analytics-portfolio.git
+cd data-analytics-portfolio
+```
+
+### 2. (Optional) Create a virtual environment
+
+Using a virtual environment is recommended to avoid dependency conflicts.
+
+```bash
+# Windows
+python -m venv venv
+venv\Scripts\activate
+
+# macOS / Linux
+python3 -m venv venv
+source venv/bin/activate
+```
+
+### 3. Install the required dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Download the dataset
+
+The dataset is **not included** in this repository due to GitHub's file size limitations.
+
+Download the dataset from:
+- [Walmart Recruiting - Store Sales Forecasting — Kaggle](https://www.kaggle.com/c/walmart-recruiting-store-sales-forecasting/data)
+
+Place the files in:
+
+```text
+Sales Forecasting (Time Series)/
+└── data/
+    ├── train.csv
+    ├── features.csv
+    └── stores.csv
+```
+
+### 5. Run the notebook
+
+```bash
+jupyter notebook
+```
+
+Open:
+
+```text
+Sales Forecasting (Time Series)/notebook.ipynb
+```
+
+Run all cells sequentially.
+
+
 ## Reflection
 
 The first mistake I made was spliting the train/test dataset for time series data. Having been so accustomed to using random train-test splits in previous projects, my muscle memory initially told me to do the same. After switching to chronological split (train on everything before a cutoff date, test on after), I realized that this step is extremely crucial design decision in the overall project since spliting it randomly would leak the future data during training and produce artificial performance. Thus, getting this step wrong would make every evaluation metric look better than it actually is, which might not be noticeable.
