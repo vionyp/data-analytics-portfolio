@@ -11,7 +11,7 @@ Measuring overall sentiment by reading through customer reviews manually is such
 ## Dataset
 
 Download the dataset from:
-- [IMDb Dataset of 50K Movie Reviews — Kaggle](https://www.kaggle.com/datasets)
+- [IMDb Dataset of 50K Movie Reviews — Kaggle](https://www.kaggle.com/datasets/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews)
 
 
 ## References
@@ -160,7 +160,7 @@ pip install -r requirements.txt
 The dataset is **not included** in this repository due to GitHub's file size limitations.
 
 Download the dataset from:
-- [IMDb Dataset of 50K Movie Reviews — Kaggle](https://www.kaggle.com/datasets)
+- [IMDb Dataset of 50K Movie Reviews — Kaggle](https://www.kaggle.com/datasets/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews)
 
 Place the downloaded file in:
 
