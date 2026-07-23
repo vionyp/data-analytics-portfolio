@@ -82,11 +82,11 @@ Download the dataset from:
 
 | Cluster | Segment | Avg Income | Avg Spending Score | Avg Age | Count |
 |---------|---------|------------|-------------------|---------|-------|
-| 🟡 Standard Customers | Medium Income, Medium Spending | ~$55k | ~49 | 42.7 | 81 |
-| 🟢 Prime Targets | High Income, High Spending | ~$86k | ~82 | 32.7 | 39 |
-| 🔵 Impulsive Buyers | Low Income, High Spending | ~$26k | ~79 | 25.3 | 22 |
-| 🟠 Careful Spenders | High Income, Low Spending | ~$88k | ~17 | 41.1 | 35 |
-| 🔴 Budget Conscious | Low Income, Low Spending | ~$26k | ~20 | 45.2 | 23 |
+| Standard Customers | Medium Income, Medium Spending | ~$55k | ~49 | 42.7 | 81 |
+| Prime Targets | High Income, High Spending | ~$86k | ~82 | 32.7 | 39 |
+| Impulsive Buyers | Low Income, High Spending | ~$26k | ~79 | 25.3 | 22 |
+| Careful Spenders | High Income, Low Spending | ~$88k | ~17 | 41.1 | 35 |
+| Budget Conscious | Low Income, Low Spending | ~$26k | ~20 | 45.2 | 23 |
 
 - **Prime Targets (High Income, High Spending)**
   - Most valuable customer segment with the highest revenue potential.
